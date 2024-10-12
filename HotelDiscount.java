@@ -50,12 +50,12 @@ public class HotelDiscount
 			System.out.println("4. Speedboat		10%");
 			System.out.print("Pick your activity no "+iCounter+" < options 1 to 4>: ");
 			iOption = input.nextInt();
-		while ( iOption < 0 || iOption > 4 )
-		{
-			System.out.println("You should only enter an integer from 1 to 4 ");
-			System.out.print("Please re-enter your activity number: ");
-			iOption = input.nextInt();
-		}
+			while ( iOption < 0 || iOption > 4 )
+			{
+				System.out.println("You should only enter an integer from 1 to 4 ");
+				System.out.print("Please re-enter your activity number: ");
+				iOption = input.nextInt();
+			}
 			
 			switch ( iOption )
 			{//Begin switch
