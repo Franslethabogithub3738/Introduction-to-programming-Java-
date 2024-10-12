@@ -4,7 +4,7 @@ import java.text.DecimalFormat; //DecimalFormat class is imported from java.text
 //@Author Lethabo Matsi
 
 public class HotelDiscount
-//Start class
+{//Start class
 	public static void main(String[] args)
 	{//Start main method
 		
