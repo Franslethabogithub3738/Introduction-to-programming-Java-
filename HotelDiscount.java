@@ -4,7 +4,7 @@ import java.text.DecimalFormat; //DecimalFormat class is imported from java.text
 //@Author Lethabo Matsi
 
 public class HotelDiscount
-{//Start class
+//Start class
 	public static void main(String[] args)
 	{//Start main method
 		
@@ -31,18 +31,31 @@ public class HotelDiscount
 		System.out.print("");
 		System.out.print("How many activities did you do?: ");
 		iNumActivities = input.nextInt();
+		while ( iNumActivities < 0 || iNumActivities > 4 )
+		{
+			System.out.println("You should only enter an integer from 0 to 4 ");
+			System.out.print("Please re-enter the number of activities you did: ");
+			iNumActivities = input.nextInt();
+		}
 		System.out.println("");
 		
 		while ( iNumActivities != iCounter )
 		{//Begin while
 			iCounter++;
 			System.out.println("Activities		Discount");
+			System.out.println(" ");
 			System.out.println("1. Zip-lining		10%");
 			System.out.println("2. Horse riding		12.5%");
 			System.out.println("3. Site seeing		0%");
 			System.out.println("4. Speedboat		10%");
 			System.out.print("Pick your activity no "+iCounter+" < options 1 to 4>: ");
 			iOption = input.nextInt();
+		while ( iOption < 0 || iOption > 4 )
+		{
+			System.out.println("You should only enter an integer from 1 to 4 ");
+			System.out.print("Please re-enter your activity number: ");
+			iOption = input.nextInt();
+		}
 			
 			switch ( iOption )
 			{//Begin switch
